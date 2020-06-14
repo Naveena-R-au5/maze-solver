@@ -10,23 +10,23 @@ and also the person can not move in direction where there is a block.Path only v
 
 In this algorithm a N*N binary matrix i.e (0's and 1's) is taken.here o's represents blocked path(cant move) and 1's represent unblocked path(can move).the binary Matrix is seen as below:-
 
-1 0 0
-1 1 0
-1 1 1
+[1 0 0]
+[1 1 0]
+[1 1 1]
 
 3*3 matrix 
 
 in this above matrix source starts from top[index(0 0)] and should reach destination[index(2 2)]
 
-[1] 0  0
- 1  1  0
- 1  1 [1]
+[[1] 0  0 ]
+[ 1  1  0 ]
+[ 1  1 [1]]
 
 we can store the visited matrix path in seperate list as if path exists it stores 1 else 0.Once the source reaches destination then the other numbers in matrix will become 0 only the final path is shown with 1's in matrix as below:-
 
-1 0 0
-1 0 0
-1 1 1
+[1 0 0]
+[1 0 0]
+[1 1 1]
 
 if the person can't move up or bottom ,then he/she can move to left or right to find the path.
 If none of the four moves (down, right, up, or left) are possible,then move back and change his/her current path (backtracking).
